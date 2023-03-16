@@ -1,7 +1,6 @@
-%global qt_module qtquickcontrols
 %global qt_version 5.15.8
 
-Name:    opt-qt5-%{qt_module}
+Name:    opt-qt5-qtquickcontrols
 Summary: Qt5 - module with set of QtQuick controls
 Version: 5.15.8
 Release: 1%{?dist}
