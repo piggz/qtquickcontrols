@@ -33,7 +33,7 @@ Requires: %{name}%{?_isa} = %{version}-%{release}
 
 
 %prep
-%autosetup -n %name-%{version}/upstream
+%autosetup -n %{name}-%{version}/upstream
 
 
 %build
