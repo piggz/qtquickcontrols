@@ -1,4 +1,5 @@
 %global qt_module qtquickcontrols
+%global qt_version 5.15.8
 
 Name:    opt-qt5-%{qt_module}
 Summary: Qt5 - module with set of QtQuick controls
@@ -14,8 +15,8 @@ Source0: %{name}-%{version}.tar.bz2
 %global __provides_exclude_from ^%{_opt_qt5_archdatadir}/qml/.*\\.so$
 
 BuildRequires: make
-BuildRequires: opt-qt5-qtbase-devel >= %{version}
-BuildRequires: opt-qt5-qtbase-static >= %{version}
+BuildRequires: opt-qt5-qtbase-devel >= %{qt_version}
+BuildRequires: opt-qt5-qtbase-static >= %{qt_version}
 BuildRequires: opt-qt5-qtbase-private-devel
 %{?_opt_qt5:Requires: %{_opt_qt5}%{?_isa} = %{_opt_qt5_version}}
 BuildRequires: opt-qt5-qtdeclarative-devel
