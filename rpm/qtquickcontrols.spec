@@ -40,6 +40,8 @@ Requires: %{name}%{?_isa} = %{version}-%{release}
 
 %make_build
 
+# bug in sb2 leading to 000 permission in some generated plugins.qmltypes files
+chmod -R ugo+r .
 
 %install
 make install INSTALL_ROOT=%{buildroot}
